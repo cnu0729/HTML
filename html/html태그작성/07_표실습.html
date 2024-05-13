@@ -1,0 +1,105 @@
+<!--
+    코드에서 스타일을 입힐 때
+    각각의 코드 안에 style을 작성해주는 것보다
+    <head> 아래에 <style>이라는 태그를 만들어서
+    내가 한 번에 꾸미고자하는 태그 이름과 꾸밀 내용을 {} 안에 작성해주는 것이
+    더 강력하게 작용
+
+    <tr style="background-color : rosybrewn">
+        처럼 작성한 것보다
+        <style>
+            th{
+                background-color: azure;
+            }
+        </style>    
+        가 강력
+
+-->
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <title>음식가게</title>
+        <meta charset="UTF-8" />
+        <!-- 변경하고자 하는 스타일이 여러개라면 한번에 적용 가능-->
+        <!--
+        <style>
+            th{
+                background-color: azure;
+            }
+        </style>
+        -->
+    </head>
+    <body>
+        <h2>메뉴판</h2>
+        <!--
+            style 에서는 스타일을 하나씩 치장을 하고 치장을 종료할 때 ; 사용
+            text-align : center; 는 글자를 가운데로 정렬
+        -->
+        <table border="1" style= "width :100%; text-align:center; border-collapse:collapse;">
+            <tr style="background-color: rgba(162, 241, 255, 0.685);">
+                <th>음식</th>
+                <th>가격</th>
+            </tr>
+            <tr>
+                <td>피자</td>
+                <td>15,000원</td>
+            </tr>
+            <tr>
+                <td>파스타</td>
+                <td>12,000원</td>
+            </tr>
+            <tr>
+                <td>스테이크</td>
+                <td>25,000원</td>
+            </tr>
+            <tr>
+                <td>샐러드</td>
+                <td>8,000원</td>
+            </tr>
+            <tr>
+                <td>음료수</td>
+                <td>2,000원</td>
+            </tr>
+        </table>
+        
+        <br>
+        <h2>게시판</h2>
+        <ul>
+            <li><strong><mark>게시물 제목1</mark></strong></li>
+            <p>
+            작성자 : 사용자1 <br><br>
+            작성일 : 2024-05-07 <br><br>
+            내용 : 이 게시물은 첫 번째 게시물입니다. 
+            </p>
+            <li><strong><mark>게시물 제목2</mark></strong></li>
+            <p> 
+            작성자 : 사용자2 <br><br>
+            작성일 : 2024-05-08 <br><br>
+            내용 : 이 게시물은 두 번째 게시물입니다.
+            </p>
+        </ul>
+        <h2>게시물 목록(테이블)</h2>
+        <table border="1" style="width: 100%; border-collapse: collapse;">
+        <tr style="background-color: rgba(255, 127, 176, 0.459);">
+            <th>게시물 제목</th>
+            <th>작성자</th>
+            <th>작성일</th>
+            <th>내용</th>
+        </tr>
+        <tr>
+            <td>게시물 제목1</td>
+            <td>사용자1</td>
+            <td>2024-05-07</td>
+            <td>이 게시물은 첫 번째 게시물입니다.</td>
+        </tr>
+        <tr>
+            <td>게시물 제목2</td>
+            <td>사용자2</td>
+            <td>2024-05-08</td>
+            <td>이 게시물은 두 번째 게시물입니다.</td>
+        </tr>
+        </table>
+
+
+    </body>
+</html>

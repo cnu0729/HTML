@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <title>동영상 게시판</title>
+    <style>
+      .icon {
+        width: 50px;
+        height: 50px;
+      }
+      body {
+        text-align: center;
+        margin: 0 auto;
+        background-color: rgba(250, 255, 202, 0.795);
+      }
+      th {
+        background-color: azure;
+        color: rgba(12, 12, 88, 0.836);
+      }
+      h1 {
+        background-color: rgba(255, 182, 193, 0.678);
+      }
+      iframe{
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+      }
+      video {
+        width: 60%;
+        display: block;
+        margin: 0 auto;
+      }
+      .컨테이너{
+        width: 70%;
+        background-color: white;
+        text-align: center;
+        margin: 0 auto;
+      }
+      .댓글{
+        margin: 0 auto;
+        display: block;
+        width: 90%;
+        border-radius: 10px;
+        background-color: rgba(152, 231, 255, 0.623);
+      }
+      a{
+        text-align: center;
+        margin: 0 auto;
+      }
+      .버튼꾸미기{
+        display: block;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="컨테이너">
+      <h1>동영상 게시판</h1>
+      <video controls>
+        <source
+          src="../비디오들/LitteLight_Doyoung.mp4"
+          type="video/mp4"
+        />
+      </video>
+      <br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/UZjGcAjd8Ok?si=ZMoImmIRljod9-di"
+        frameborder="0"
+        title="반딧불mv-도영"
+      ></iframe>
+      <br />
+      <iframe
+        width="560"
+        height="315"
+        src="https://www.youtube.com/embed/SM5VZzWYO5Y?si=rLhPWi6nZVTwQtim"
+        frameborder="0"
+        title="킬링보이스-nct127"
+      ></iframe>
+      <br />
+      <div class="댓글들">
+        <h2>모든 댓글</h2>
+        <div class="댓글">
+            <p>사용자1: </p>
+            <p>노래가 너무 좋아서 개안했어요~~~♥</p>
+        </div>
+        <br>
+        <div class="댓글">
+            <p>사용자2: </p>
+            <p> 제가 즐겨듣는 가수는 <br>
+                박효신,아이유 그리고 김도영</p>
+        </div>
+        <br>
+        <div class="댓글">
+            <input type="text" placeholder="이름을입력하세요">
+            <input type="text" placeholder="내용을입력하세요">
+        </div>
+        <br>
+    </div>
+    <br>
+    <div class="버튼꾸미기">
+      <a href="홈페이지메인.html">
+        <img src="메인아이콘.png" width="50px" height="50px" />
+      </a>
+      <a href="홈페이지게시판.html">
+        <img src="게시판아이콘.png" width="50px" height="50px" />
+      </a>
+    </div>
+    </div>
+    
+  </body>
+</html>
