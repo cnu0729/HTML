@@ -3,22 +3,54 @@
     <head><!--웹설정 meta title style script link-->
         <meta charset="UTF-8"><!--한글 깨짐 방지-->
         <title>블로그 설문조사</title>
+        <style>
+            body{
+                margin: 0 auto;
+                background-color: #cccccc81;
+            }
+            .컨테이너{
+                width: 60%;
+                margin: 0 auto;
+                text-align: center;
+                padding: 20px;
+                background-color: white;
+                border-radius: 10px;
+                box-shadow: 0 0 10px rgba(39, 39, 39, 0.678);
+            }
+            button{
+                background-color: #4CAF50;
+                border-radius: 5px;
+                border: none;
+                padding: 6px 12px;
+                color: white;
+            }
+            input{
+                width: 90%;
+            }
+        </style>
     </head>
     <body>
         <div class="컨테이너">
             <h1>블로그 설문조사</h1>
-            <label for="name">이름:</label><br>
-            <input type="text" name="name"><br>
-            <label for="email">이메일:</label><br>
-            <input type="text" name="email"><br>
-            <label for="age">나이:</label><br>
-            <input type="number" name="age"><br>
-            <label for="opinion">의견:</label><br>
-            <input type="text" name="opinion"><br>
-            <br>
+            <label>
+                이름:<br>
+            <input type="text"></label>
+            <br><br>
+            <label>
+                이메일:<br>
+            <input type="text"></label>
+            <br><br>
+            <label>
+                나이:<br>
+            <input type="number"></label>
+            <br><br>
+            <label>
+                의견:<br>
+            <input type="text"></label>
+            <br><br>
             <form>
                 <button type="submit">제출</button>
-            </form>
+            </form><br>
         </div>
     </body>
 </html>
