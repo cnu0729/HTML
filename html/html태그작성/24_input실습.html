@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head>
+        <meta charset="UTF-8" />
+        <title>피자주문</title>
+        <style>
+            h1{
+                text-align: center;
+                background-color: rgb(249, 255, 193);
+            }
+            body{
+                background-color: gainsboro;
+            }
+            .컨테이너{
+                width: 70%;
+                margin: 0 auto;
+                padding: 10px;
+                background-color: white;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="컨테이너">
+            <h1>☎ 피자 주문 내역 ☎</h1>
+            <h2>▶ 고객 정보</h2>
+            <label>
+                <p>고객명 : </p>
+                <input type="text"  name="clientName">
+            </label><br>
+            <label>
+                <p>전화번호 : </p>
+                <input type="number"  name="clientPhone" placeholder="숫자만입력하세요">
+            </label><br>
+            <label>
+                <p>Email : </p>
+                <input type="email"  name="clientEmail">
+            </label><br><br>
+
+            <hr><br>
+            <h2>▶ Size 선택</h2>
+            <label>
+                <input type="radio" name="size" value="Small">
+                Small
+            </label><br>
+            <label>
+                <input type="radio" name="size" value="Medium">
+                Medium
+            </label><br>
+            <label>
+                <input type="radio" name="size" value="Large">
+                Large
+            </label><br><br>
+            
+            <hr><br>
+            <h2>▶ 토핑 추가</h2>
+            <label>
+                <input type="checkbox" name="topping" value="베이컨">
+                베이컨
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="치즈">
+                치즈
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="양파">
+                양파
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="버섯">
+                버섯
+            </label><br>
+            <label>
+                <input type="checkbox" name="topping" value="기타">
+                기타
+                <input type="text" name="topping" placeholder="기타 토핑 추가">
+            </label><br><br>
+
+            <hr><br>
+
+            <label>
+                <p>희망배송시간 : <input type="time" name="wishTime"></p>
+            </label>
+            <label>
+                <p>배송 요청사항 : <input type="text" style="width: 70%;"></p>
+            </label><br>
+            <br>
+            <form>
+                <button type="submit">주문하기</button>
+            </form>
+        </div>
+    </body>
+</html>
