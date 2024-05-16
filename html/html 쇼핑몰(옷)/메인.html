@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ko">
+    <head><!--head안에들어가는 script body안에 들어가는 script-->
+        <meta charset="UTF-8">
+        <title>KH쇼핑몰</title>
+        <link rel="stylesheet" href="style.css">
+    </head>
+    <body>
+        <div class="컨테이너">
+            <div class="헤더">
+                <h1>kh 쇼핑몰</h1>
+            </div>
+            <div class="네비게이션">
+                <ul>
+                    <li><a href="#">홈</a></li>
+                    <li><a href="#">제품</a></li>
+                    <li><a href="#">장바구니</a></li>
+                    <li><a href="#">로그인</a></li>
+                </ul>
+            </div>
+            <div class="메인">
+                <div class="제품사진">
+                    <img src="이미지/아우터.png" alt="제품이미지">
+                    <h2>Knit zip-up</h2>
+                    <p>심플한 니트 집업이지만, 포인트가 되는 로고로 시크하면서 귀여운 매력 up !<br><br>
+                    <small>툭 떨어지는 루즈핏 집업으로 아방한 느낌입니다. <br>베이직하면서도 우리 브랜드만의 느낌이 돋보이는 아우터입니다.</small></p>
+                    <p><em> $ 9,000 </em></p>
+                    <button onclick="버튼클릭()">장바구니에 추가</button>
+                </div>
+                <div class="제품사진">
+                    <img src="이미지/반팔.png" alt="제품이미지">
+                    <h2>★ half T-shirt</h2>
+                    <p>전면의 썸머 느낌의 그래픽과 마뗑킴 로고가 은은하게 프린팅 된 슬림핏 티셔츠<br><br>
+                    <small>베이직한 디자인이지만 키치한 프린팅으로 귀여운 mz력 up !!</small></p>
+                    <p><em>Sale : $ 600</em><s style="color: red;"><small style="color: red;">$ 12,000</small></s></p>
+                    <button onclick="버튼클릭()">장바구니에 추가</button>
+                </div>
+                <div class="제품사진">
+                    <img src="이미지/반바지.png" alt="제품이미지">
+                    <h2>WASHED HALFS DEENIM PANTS</h2>
+                    <p>러프한 디테일과 워싱감이 포인트인 5부 데님 팬츠<br><br>
+                    <small>무릎에 닿는 적당한 기장감으로 여름의 여유를 더함과 동시에 시크하고 통통튀는 매력을 보여줄 수 있는 바지입니다.</small></p>
+                    <p><em> $ 70</em></p>
+                    <button onclick="버튼클릭()">장바구니에 추가</button>
+                </div>
+                <div class="제품사진">
+                    <img src="이미지/real청바지.png" alt="제품이미지">
+                    <h2>BOOTS CUT WASHED PANTS</h2>
+                    <a href="팬츠4.html">＊상세보기</a><br>
+                    <p>포켓 부분의 배색을 다르게 하여 포인트를 주었고, 전반적인 워싱감이 돋보이는 부츠컷 팬츠<br><br>
+                    <small>탄탄하지만 얇은 소재감으로 봄여름가을 모두 착용하기 좋습니다.</small></p>
+                    <p><em>Sale : $100</em><s style="color: red;"><small style="color: red;">$ 400</small></s></p>
+                    <br>
+                    <button onclick="버튼클릭()">장바구니에 추가</button>
+                </div>
+            </div>
+            <div class="푸터">
+                <p> &copy; 2024 쇼핑몰</p>
+            </div>
+        </div>
+        <script>
+            // 스크립트 주석
+            // 장바구니 추가버튼 클릭할 경우 알림창을 띄우는 함수
+            // 자바에서는 메서드를 작성할 때
+            // public void 버튼클릭(){ → function 버튼클릭(){
+            //  System.out.println("버튼이 클릭됐습니다.") alert("상품이 추가되었습니다.")  
+            //}                                     }
+            function 버튼클릭(){
+                alert("상품이 장바구니에 추가되었습니다.");
+            }
+        </script>
+    </body>
+</html>
